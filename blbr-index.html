@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="lib/codemirror.js"></script>
+  <link rel="stylesheet" href="lib/codemirror.css">
+  <!-- <link rel="stylesheet" href="theme/darcula.css"> -->
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+  <script src="mode/javascript/javascript.js"></script>
+  <link rel="stylesheet" href="style.css">
+    
+  <title>BLBR</title>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="header">
+      <h3 class="title">BLBR</h3>
+      <h4 class="description">Create simple web pages in minutes!</h4>
+      <button id="tutorialButton">Tutorial</button>
+    </div>
+
+    <div class="content">
+      <div class="editorWrapper">
+        <textarea name="" id="textAreaEditor" cols="30" rows="100" class="">!Title</textarea>
+        <script>
+          var textArea = document.getElementById('textAreaEditor')
+          var editor = CodeMirror.fromTextArea(textArea, {
+            lineNumbers: true,
+          });
+          //editor.setOption('theme', 'darcula');
+        </script>
+      </div>
+
+      <div class="commandsCentre">
+        <p class="opis">Auto Convert</p>
+        <label class="switch">
+          <input id="toggleAuto" type="checkbox">
+          <span class="slider round"></span>
+        </label>
+        <button class="convertButton">Convert</button>
+        <button class="downloadButton">Save</button>
+      </div>
+
+      <div class="previewWrapper">
+        
+      </div>
+    </div>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>

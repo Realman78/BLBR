@@ -11,6 +11,8 @@ const availableCommands = [
   "clear",
 ];
 
+console.log("Hey fellow developer. If you have JavaScript disabled, please enable it so that this page can work :).")
+
 let commandHistory = [];
 let commandIndex = 0;
 

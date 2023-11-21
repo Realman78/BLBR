@@ -1,6 +1,9 @@
 html, body {
     color: rgb(39, 133, 47);
 }
+textarea:focus, input:focus{
+    outline: none;
+}
 #command{
     width: 300px;
     border: 0px;
